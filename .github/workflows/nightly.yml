@@ -1,10 +1,9 @@
 
 name: Deploy Nightly
 on:
-  # This can be used to automatically publish nightlies at UTC nighttime
-  schedule:
-    - cron: '0 2 * * *' # run at 2 AM UTC
-  # This can be used to allow manually triggering nightlies from the web interface
+  # Scheduled nightly disabled: v1.0.0 is the final MoonLight release
+  # schedule:
+  #   - cron: '0 2 * * *' # run at 2 AM UTC
   workflow_dispatch:
 
 permissions:
